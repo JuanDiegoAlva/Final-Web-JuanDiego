@@ -92,6 +92,16 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Home Page Image Styling */
+.home-image {
+    max-width: 600px; /* Set a reasonable maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the image */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
 /* Centered Image for About Page */
 .centered-image {
     display: block;
@@ -118,12 +128,6 @@ nav ul li a:hover {
     align-items: center; /* Center the text vertically with the image */
     margin-bottom: 20px; /* Add spacing between list items */
     font-size: 1.1em; /* Slightly larger text */
-}
-
-/* Featured Section */
-.featured-image {
-    overflow: auto;
-    margin-top: 20px;
 }
 
 /* Form Styling */
@@ -193,19 +197,9 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .wrapped-image {
-        float: none;
-        display: block;
-        margin: 0 auto 15px auto;
-    }
-
     nav ul {
         flex-direction: column;
         gap: 10px;
-    }
-
-    form input, form textarea, form select, form button {
-        font-size: 1em;
     }
 }
 
@@ -214,15 +208,7 @@ footer p {
         font-size: 0.9em;
     }
 
-    .intro h2 {
-        font-size: 1.5em;
-    }
-
-    form {
-        padding: 15px;
-    }
-
-    .product-image, .event-image {
-        max-width: 80px; /* Make images smaller for very small screens */
+    .home-image {
+        max-width: 300px; /* Resize the Home page image further for small screens */
     }
 }
