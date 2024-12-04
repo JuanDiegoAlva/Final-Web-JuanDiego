@@ -125,7 +125,6 @@ nav ul li a:hover {
     font-size: 1.1em;
 }
 
-/* Featured Section */
 .featured-image {
     overflow: auto;
     margin-top: 20px;
@@ -196,7 +195,7 @@ footer p {
     margin: 0 5px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .wrapped-image {
         float: none;
