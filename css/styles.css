@@ -92,7 +92,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Image Styling */
+/* Centered Image for About Page */
 .centered-image {
     display: block;
     margin: 20px auto;
@@ -102,18 +102,10 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
-.wrapped-image {
-    float: left;
-    margin-right: 20px;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-}
-
 /* Product and Event Images */
 .product-image, .event-image {
-    max-width: 80px;
-    height: auto;
+    max-width: 150px; /* Ensure images are not too large */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 15px;
     border-radius: 8px;
 }
@@ -121,10 +113,11 @@ nav ul li a:hover {
 .product-list li, .event-list li {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 1.1em;
 }
 
+/* Featured Section */
 .featured-image {
     overflow: auto;
     margin-top: 20px;
@@ -195,7 +188,7 @@ footer p {
     margin: 0 5px;
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .wrapped-image {
         float: none;
@@ -224,5 +217,9 @@ footer p {
 
     form {
         padding: 15px;
+    }
+
+    .product-image, .event-image {
+        max-width: 100px; /* Make images smaller for smaller screens */
     }
 }
