@@ -104,8 +104,8 @@ nav ul li a:hover {
 
 /* Product and Event Images */
 .product-image, .event-image {
-    max-width: 150px; /* Ensure images are not too large */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 150px;
+    height: 150px; 
     margin-right: 15px;
     border-radius: 8px;
 }
