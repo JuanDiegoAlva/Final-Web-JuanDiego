@@ -92,14 +92,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Home Page Image Styling */
-.home-image {
-    max-width: 600px; /* Set a reasonable maximum width */
+/* General Image Styling for Products, Events, and Home Page */
+.product-image, .event-image, .home-image {
+    max-width: 100px; /* Set the same width for consistency */
     height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
+
+/* Center the Home Page Image */
+.home-image {
     display: block;
-    margin: 20px auto; /* Center the image */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    margin: 20px auto; /* Center the image horizontally */
 }
 
 /* Centered Image for About Page */
@@ -111,15 +116,6 @@ nav ul li a:hover {
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-}
-
-/* Product and Event Images */
-.product-image, .event-image {
-    max-width: 100px; /* Resize images to be smaller */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Space between image and text */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow for aesthetic */
 }
 
 /* List Item Layout for Products and Events */
@@ -208,7 +204,7 @@ footer p {
         font-size: 0.9em;
     }
 
-    .home-image {
-        max-width: 300px; /* Resize the Home page image further for small screens */
+    .product-image, .event-image, .home-image {
+        max-width: 80px; /* Resize images further for small screens */
     }
 }
